@@ -2,10 +2,11 @@
     background-color: #444;
     margin: 8px 0px;
     padding: 15px 20px;
-    display: flex;
     border-radius: 5px;
-    justify-content: space-between;
     color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .task-title {
@@ -16,5 +17,8 @@
 .remove-task-button {
     background-color: #444;
     border: none;
+    font-size: 24px;
     color: chartreuse;
+    display: flex;
+    align-items: center;
 }
