@@ -2,10 +2,10 @@ import React from 'react';
 
 import Task from './Task'
 
-const TasksList = ({ tasks, handleTaskClick }) => {
+const TasksList = ({ tasks, handleTaskClick, handleTaskRemove }) => {
     return (
         <div>
-            {tasks.map(task => <Task task={task} handleTaskClick={handleTaskClick} />)}
+            {tasks.map(task => <Task task={task} handleTaskClick={handleTaskClick} handleTaskRemove={handleTaskRemove} />)}
         </div>
     );
 };

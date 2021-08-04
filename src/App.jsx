@@ -34,6 +34,11 @@ const App = () => {
     setTasks(newTasks);
   };
 
+  const handleTaskRemove = (taskId) => {
+    const newTasks = tasks.filter(task => task.id !== taskId)
+    setTasks(newTasks);
+  };
+
   const handleTaskClick = (taskId) => {
     const newTasks = tasks.map(task => {
       if (task.id === taskId) 
@@ -49,7 +54,7 @@ const App = () => {
     <>
       <div className="container">
         <AddTask handleTaskAdd={handleTaskAdd} />
-        <TasksList tasks={tasks} handleTaskClick={handleTaskClick} />
+        <TasksList tasks={tasks} handleTaskClick={handleTaskClick} handleTaskRemove={handleTaskRemove} />
       </div>
     </>
   );

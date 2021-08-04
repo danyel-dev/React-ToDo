@@ -12,3 +12,9 @@
     margin: 0px;
     cursor: pointer;
 }
+
+.remove-task-button {
+    background-color: #444;
+    border: none;
+    color: chartreuse;
+}
