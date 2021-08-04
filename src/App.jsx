@@ -3,6 +3,7 @@ import {v4 as uuidv4} from 'uuid';
 
 import TasksList from './components/TasksList';
 import AddTask from './components/AddTask'
+import Header from './components/Header';
 
 import './App.css';
 
@@ -53,6 +54,7 @@ const App = () => {
   return (
     <>
       <div className="container">
+        <Header />
         <AddTask handleTaskAdd={handleTaskAdd} />
         <TasksList tasks={tasks} handleTaskClick={handleTaskClick} handleTaskRemove={handleTaskRemove} />
       </div>
